@@ -9,40 +9,90 @@
     <style>
 
         /*Configurações Gerais do Site*/
-        :root{
+:root {
             --preto: rgba(39, 39, 39);
             --preto-alpha: rgba(39, 39, 39, 0.4);
             --white: rgba(255, 255, 255);
             --cinza: rgb(184, 184, 184);
         }
 
-        *{margin: 0; border: 0; padding: 0;}
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
 
-        html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
 
-        header{background-color: var(--preto); color: var(--white); padding: 1%;}
+        header {
+            position: fixed;
+            width: 100%;;
+            background-color: var(--preto);
+            color: var(--white);
+            padding: 1%;
+        }
 
-        body{background-color: var(--cinza);}
+        body {
+            background-color: var(--cinza);
+        }
 
-        main{
+        main {
             background-color: var(--white);
-            padding: 2%; margin: auto;
+            padding: 2%;
+            padding-top:4%;
+            margin: auto;
             width: 90%;
-            margin-top: 1%;
             border-radius: 15px;
             box-shadow: 3px 3px 10px var(--preto-alpha);
         }
 
         /*Configurações dos Títulos Headlines*/
-        h1{font-size: 2em;}
-        h2{font-size: 1.5em;}
-        h3{font-size: 1.5em;}
-        h4{font-size: 0.9em;}
-        h1,h2,h3,h4,h5,h6{padding-top: 0.25%; padding-bottom: 0.30%;}
-        
-        /*Configurações de Imagem*/
-        img{display:block; width: 95%; margin:auto; padding-top: 2%};
+        h1 {
+            font-size: 2em;
+        }
+        @media(min-width:360px) and (max-width:800px){
+            h1{margin-top: 1%;}
+        }
 
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 0.9em;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            padding-top: 0.25%;
+            padding-bottom: 0.30%;
+        }
+
+        /*Configurações de Imagem*/
+        img {
+            display: block;
+            width: 95%;
+            margin: auto;
+            padding-top: 2%;
+        }
+
+        /*Configuracoes de Paragrafo*/
+        p{padding-top: 1%; padding-bottom: 1%;}
+        
+        /*Configuracoes de Paragrafos para mobile*/
+        @media(min-width:360px) and (max-width:800px){
+            p{padding-top: 3%; padding-bottom: 3%;}
+        }
+
+        /*Divs*/
+        .separador{margin-top:5%;}
+
+        @media(min-width:360px) and (max-width:800px){
+            .separador{margin-top: 8%;}
+        }
     </style>
 
 </head>
@@ -54,14 +104,22 @@
     </header>
 
     <nav></nav>
-    
+    <br>
+    <div class="separador"></div>
+    <br>
+
     <!-- HTML semântico -->
     <main>
         <article>
+            
             <h1>Desenvolvimento front-end: Curso completo e essencial</h1>
+
+            <br>
             <h2>Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!</h2>
 
-            <p>Você já imaginou criar sites que impressionam tanto pelo visual quanto pela performance?</p>
+            <p>
+                Você já imaginou criar sites que impressionam tanto pelo visual quanto pela performance?
+            </p>
             <p>
                 O front-end é a peça-chave por trás das interfaces que vemos e interagimos na web.
                 Se você quer dominar essa área e conquistar oportunidades no mercado de tecnologia,
@@ -75,18 +133,95 @@
                 Não importa se você é iniciante ou já tem algum conhecimento, o conteúdo foi planejado
                 para levar você do básico ao avançado, garantindo o domínio das principais ferramentas e tecnologias.
             </p>
+
             <picture>
                 <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="Analista de Sistemas">
-                <img src="img/imagem1.png" alt="Analista de Sistemas"> 
+                <img src="img/imagem1.png" alt="Analista de Sistemas">
             </picture>
 
-        </article>
-        
-        <section></section>
-    </main>
+            <br>
+            <h2>O que você vai aprender?</h2>
 
-    <aside></aside>
+            <p>
+                HTML5 e CSS3 : Domine a estrutura e o estilo das páginas web.
+            </p>
 
-    <footer></footer>
-</body>
+            <p>
+                JavaScript : Torne seus sites dinâmicos e interativos com uma das linguagens mais populares do mundo.
+            </p>
+
+            <p>
+                Design Responsivo : Crie sites que se adaptam a qualquer tela, seja mobile, tablet ou desktop.
+            </p>
+
+            <p>
+                Otimização de Desempenho : Técnicas para garantir que suas páginas sejam carregadas rapidamente e proporcionem uma experiência fluida.
+            </p>
+
+            <br>
+            <h2>Por que esse curso é ideal para você?</h2>
+
+            <p>
+                Metodologia Prática : Você aprenderá codificando, com exercícios reais e testes que vão solidificar seu conhecimento.
+            </p>
+
+                <p>
+                    Projetos Reais : Desenvolva projetos completos para montar um portfólio profissional e atrair a atenÃ§Ã£o de recrutadores.
+                </p>
+
+                <p>
+                    Acesso VitalÃ­cio : Aprenda no seu ritmo e tenha acesso ao conteÃºdo sempre que precisar.
+                </p>
+
+                <p>
+                    Suporte Exclusivo : Tire suas dÃºvidas diretamente com especialistas que atuam no mercado e estÃ£o prontos para ajudÃ¡-lo no futuro.
+                </p>
+
+                <p>
+                    CertificaÃ§Ã£o Reconhecida : Ao concluir o curso, vocÃª recebe um certificado que comprova seu conhecimento e pode ser um diferencial no seu currÃ­culo.
+                </p>
+
+                <br>
+                <h2>Para quem é este curso?</h2>
+
+                <p>
+                    Iniciantes : NÃ£o tem experiÃªncia com programaÃ§Ã£o? Sem problemas! Nosso curso foi pensado para introduzir vocÃª aos conceitos fundamentais, com uma curva de aprendizado suave e prÃ¡tica.
+                </p>
+
+                <p>
+                    Desenvolvedores em TransiÃ§Ã£o de Carreira : Se vocÃª jÃ¡ tem experiÃªncia em outras Ã¡reas da tecnologia, mas quer migrar para o front-end, este curso vai acelerar seu processo de transiÃ§Ã£o.
+                </p>
+
+                <p>
+                    Profissionais de Design : Se vocÃª Ã© designer e deseja levar suas habilidades para o prÃ³ximo nÃ­vel, criando sites completos e funcionais, este curso serÃ¡ uma Ã³tima adiÃ§Ã£o ao seu repertÃ³rio.
+                </p>
+
+                <br>
+                <h2>Vantagens de Aprender Front-End Hoje</h2>
+
+                <p>
+                    A demanda por desenvolvedores front-end nÃ£o para de crescer, jÃ¡ que a presenÃ§a digital das empresas Ã© cada vez mais essencial. Sites bem construÃ­dos e funcionais sÃ£o uma necessidade, e profissionais que dominam as tÃ©cnicas de front-end estÃ£o sendo disputados no mercado.
+                </p>
+
+                <p>
+                    Altos SalÃ¡rios : As empresas pagam bem por quem sabe criar sites modernos e eficientes.
+                </p>
+
+                <p>
+                    Flexibilidade : Trabalhe em empresas renomadas ou atue como freelancer, criando sua prÃ³pria carteira de clientes.
+                </p>
+
+                <p>
+                    Tecnologia em Constante EvoluÃ§Ã£o : O front-end evolui rapidamente, e aprender essas habilidades agora vai garantir que vocÃª esteja preparado para o futuro.
+                </p>
+
+            </article>
+
+            <section></section>
+        </main>
+
+        <aside></aside>
+
+        <footer></footer>
+    </body>
 </html>
