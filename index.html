@@ -48,6 +48,15 @@
             border-radius: 15px;
             box-shadow: 3px 3px 10px var(--preto-alpha);
         }
+        
+        aside {
+            background-color: var(--white);
+            padding: 2%;
+            margin: auto;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px var(--preto-alpha);
+        }
 
         /*Configurações dos Títulos Headlines*/
         h1 {
@@ -81,7 +90,7 @@
 
         /*Configuracoes de Paragrafo*/
         p{padding-top: 1%; padding-bottom: 1%;}
-        
+
         /*Configuracoes de Paragrafos para mobile*/
         @media(min-width:360px) and (max-width:800px){
             p{padding-top: 3%; padding-bottom: 3%;}
@@ -89,10 +98,27 @@
 
         /*Divs*/
         .separador{margin-top:5%;}
+        .separador-conteudo{margin-top:20px;}
 
         @media(min-width:360px) and (max-width:800px){
             .separador{margin-top: 8%;}
         }
+
+
+        /*Configuracoes das Grids*/
+        #grid-conteudo{
+            background-color: var(--cinza);
+            border-radius: 10px;
+            padding: 2%;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+            max-width: 1024px;
+            margin: auto;
+            gap:2px;
+        }
+        .grid div {background-color: var(--white); padding:2px; text-align: center;}
     </style>
 
 </head>
@@ -220,7 +246,20 @@
             <section></section>
         </main>
 
-        <aside></aside>
+        <div class="separador-conteudo"></div>
+
+        <aside>
+            <section id="grid-conteudo">
+                <div class="grid">
+                    <div>Conteudo1</div>
+                    <div>Conteudo2</div>
+                    <div>Conteudo3</div>
+                    <div>Conteudo4</div>
+                    <div>Conteudo5</div>
+                    <div>Conteudo6</div>
+                </div>
+            </section>
+        </aside
 
         <footer></footer>
     </body>
