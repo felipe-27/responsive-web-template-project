@@ -34,9 +34,29 @@
             width: 100%;
             background-color: var(--preto);
             color: var(--white);
-            padding: 1%;
         }
         
+        header div{
+            padding: 2%;
+        }
+
+        nav {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            word-spacing: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
         footer {
             background-color: var(--preto);
             color: var(--white);
@@ -109,11 +129,11 @@
         #footer-conteudo p{padding: 0;}
         
         /*Divs*/
-        .separador{margin-top:5%;}
+        .separador{margin-top:12%;}
         .separador-conteudo{margin-top:20px;}
 
         @media(min-width:360px) and (max-width:800px){
-            .separador{margin-top: 8%;}
+            .separador{margin-top: 20%;}
         }
 
 
@@ -153,11 +173,17 @@
 <body>
 
     <header>
-        <h3>Treinamentos Info</h3>
-        <h4>Desenvolvimento Front End</h4>
+        <div>
+            <h3>Treinamentos Info</h3>
+            <h4>Desenvolvimento Front End</h4>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Cursos</a>
+        </nav>
     </header>
 
-    <nav></nav>
     <br>
     <div class="separador"></div>
     <br>
