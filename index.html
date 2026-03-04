@@ -9,13 +9,13 @@
     <style>
 
         /*Configurações Gerais do Site*/
-:root {
+            :root {
             --preto: rgba(39, 39, 39);
             --preto-alpha: rgba(39, 39, 39, 0.4);
             --white: rgba(255, 255, 255);
             --cinza: rgb(184, 184, 184);
             --green: #3B7600;
-            --lgreen: #80FF00;
+            --lgreen: #5EBB00;
         }
 
         * {
@@ -58,7 +58,7 @@
             border-radius: 15px;
             box-shadow: 3px 3px 10px var(--preto-alpha);
         }
-        
+
         aside {
             background-color: var(--white);
             padding: 2%;
@@ -132,6 +132,21 @@
         }
         .grid div {background-color: var(--white); padding:2px; text-align: center;}
 
+        /*Configuracoes para Botao*/
+
+        button{
+            display: block;
+            margin: auto;
+            padding: 8px 20px 8px 20px;
+            background-color: var(--green);
+            color: var(--white);
+            font-weight: bold;
+            transition: 0.5s ease;
+        }
+
+        button:hover{
+            background-color: var(--lgreen);
+        }
     </style>
 
 </head>
@@ -177,6 +192,10 @@
                 <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="Analista de Sistemas">
                 <img src="img/imagem1.png" alt="Analista de Sistemas">
             </picture>
+
+            <br>
+            <button>Saiba mais</button>
+            <br>
 
             <h2>O que você vai aprender?</h2>
 
